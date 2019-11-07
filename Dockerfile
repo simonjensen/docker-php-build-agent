@@ -3,6 +3,8 @@ FROM ubuntu:18.04
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
+    apt-utils \
+    unzip \
     curl \
     wget \
     jq
@@ -25,8 +27,9 @@ RUN apt install -y apt-transport-https software-properties-common && \
 # NodeJS
 RUN wget https://deb.nodesource.com/setup_8.x && bash setup_8.x && apt-get install -y --no-install-recommends nodejs && rm setup_8.x
 
-# Bower
+# Bower, Gulp & node-sass
 RUN npm install -g bower && npm install -g gulp
+RUN npm install node-sass
 
 # PHP
 ENV DEBIAN_FRONTEND=noninteractive
