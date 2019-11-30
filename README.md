@@ -7,23 +7,23 @@ Comes with the following tools:
 - curl
 - wget
 - jq
-- python 2.7 & pip
+- python 3.6 & pip
 - aws-cli
 - docker-ce
 - nodejs 8
 - Bower, Gulp & node-sass
 - Composer
-- php 7.2
-  - php7.2-bcmath
-  - php7.2-curl
-  - php7.2-gd
-  - php7.2-intl
-  - php7.2-json
-  - php7.2-mbstring
-  - php7.2-mysql
-  - php7.2-odbc
-  - php7.2-opcache
-  - php7.2-pgsql
-  - php7.2-soap
-  - php7.2-xml
-  - php7.2-zip
+- php 7.4
+  - php7.4-bcmath
+  - php7.4-curl
+  - php7.4-gd
+  - php7.4-intl
+  - php7.4-json
+  - php7.4-mbstring
+  - php7.4-mysql
+  - php7.4-odbc
+  - php7.4-opcache
+  - php7.4-pgsql
+  - php7.4-soap
+  - php7.4-xml
+  - php7.4-zip

@@ -9,8 +9,10 @@ RUN apt update && \
     wget \
     jq
 
-# Python & Pip
-RUN apt install -y python python-pip
+# Python 3.6 & Pip
+RUN apt install -y python3.6 python3-pip && \
+    ln -s /usr/bin/python3.6 /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip
 
 # AWS Cli
 RUN pip install awscli --upgrade --user && \
