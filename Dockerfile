@@ -9,6 +9,9 @@ RUN apt update && \
     wget \
     jq
 
+# Set timezone to Europe/Copenhagen
+RUN ln -s /usr/share/zoneinfo/Europe/Copenhagen /etc/localtime
+
 # Python 3.6 & Pip
 RUN apt install -y python3.6 python3-pip && \
     ln -s /usr/bin/python3.6 /usr/bin/python && \
