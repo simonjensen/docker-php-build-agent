@@ -28,3 +28,4 @@ Comes with the following tools:
   - php7.4-xml
   - php7.4-zip
   - php7.4-ldap
+  - php7.4-mongodb
